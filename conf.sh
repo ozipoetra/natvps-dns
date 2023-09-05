@@ -1,4 +1,4 @@
-#/bin/sh
+#/bin/bash
 echo "NAT VPS Auto DNS Configure"
 echo "============================"
 echo ""
@@ -21,5 +21,4 @@ chattr +i /etc/resolv.conf
 echo ""
 echo "Restarting network service..."
 service networking restart
-service networking status
 echo "DONE 👍"
