@@ -1,7 +1,7 @@
 # Auto DNS configuration NatVPS
 Auto setup and configure dns for natvps
 ```
-curl https://github.com/ozipoetra/natvps-dns/raw/main/conf.sh | bash
+bash <(curl -Ls https://github.com/ozipoetra/natvps-dns/raw/main/conf.sh)
 ```
 
 ## Another useful to optimize natvps connection
