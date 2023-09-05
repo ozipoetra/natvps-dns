@@ -8,6 +8,7 @@ systemctl disable systemd-resolved.service
 echo ""
 echo "using plain dns resolv"
 rm /etc/resolv.conf
+rm /etc/systemd/resolved.conf
 rm /etc/resolvconf -rf
 rm /etc/network/*/resolved
 cat > /etc/resolv.conf <<-END
@@ -20,5 +21,5 @@ chattr +i /etc/resolv.conf
 echo ""
 echo "Restarting network service..."
 service networking restart
-service network status
+service networking status
 echo "DONE 👍"
